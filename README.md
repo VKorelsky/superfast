@@ -8,3 +8,8 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 
 - All styles should be edited in the scss folder. Step 2 below will compile it to css. **Do not edit the /css folder.** 
 - Run `<some command>` to compile the css to scss. 
+- Run `<some command>` to minify the js
+
+
+## Deploy
+- Minify the css and the js
