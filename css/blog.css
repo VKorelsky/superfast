@@ -1,0 +1,48 @@
+/* Variables */
+/* $purple: #C665EE;
+$green: #1DD05D; */
+/* Blog page styles */
+.block-24 .BlogBlockLarge {
+  border-radius: 10px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+  .block-24 .BlogBlockLarge:before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), color-stop(51.56%, rgba(14, 14, 14, 0.57)), color-stop(99.99%, rgba(31, 31, 31, 0.62)), to(rgba(0, 0, 0, 0.35)));
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.67) 0%, rgba(14, 14, 14, 0.57) 51.56%, rgba(31, 31, 31, 0.62) 99.99%, rgba(0, 0, 0, 0.35) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0.67) 0%, rgba(14, 14, 14, 0.57) 51.56%, rgba(31, 31, 31, 0.62) 99.99%, rgba(0, 0, 0, 0.35) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(14, 14, 14, 0.57) 51.56%, rgba(31, 31, 31, 0.62) 99.99%, rgba(0, 0, 0, 0.35) 100%); }
+
+.block-25 .BlogMenu .BlogMenuContainer {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3); }
+  .block-25 .BlogMenu .BlogMenuContainer .BlogMenuItem {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.3); }
+    .block-25 .BlogMenu .BlogMenuContainer .BlogMenuItem.active {
+      color: #485FE5;
+      position: relative; }
+      .block-25 .BlogMenu .BlogMenuContainer .BlogMenuItem.active:after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        background: #485FE5;
+        height: 2px;
+        width: 100%; }
+
+.block-25 .BlogContainer .BlockBlog {
+  width: 33.33333%; }
+  .block-25 .BlogContainer .BlockBlog[data-item-num="4"], .block-25 .BlogContainer .BlockBlog[data-item-num="5"], .block-25 .BlogContainer .BlockBlog[data-item-num="9"], .block-25 .BlogContainer .BlockBlog[data-item-num="10"], .block-25 .BlogContainer .BlockBlog[data-item-num="14"], .block-25 .BlogContainer .BlockBlog[data-item-num="15"] {
+    width: 50%; }

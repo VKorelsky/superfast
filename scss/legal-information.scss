@@ -1,0 +1,32 @@
+@import "variables.scss";
+
+/* Legal Information page styles */
+
+.block-29{
+	.menu-block{
+		height: 25px;
+		overflow: hidden;
+		margin-bottom: 10px;
+		cursor: pointer;
+		.menu-header{
+			&:hover{
+				color:$accent-blue-4;
+			}
+		}
+		&.active{
+			height: auto;
+			.menu-inner{
+				margin-bottom: 15px;				
+			}
+		}
+		&:last-of-type{
+			margin-bottom:0;
+			&.active{
+				margin-bottom:0;
+			}
+		}
+	}	
+	.menu-inner{
+		border-left: 1.5px solid $grey-dark-1;
+	}	
+}
