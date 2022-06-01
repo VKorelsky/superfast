@@ -74,22 +74,22 @@ $(document).ready(function(){
 	 
 	});
 
-	// Navigation
+	// // Navigation
 
-	$(".hamburger").click(function(){
-		$(this).removeClass('active');
-		$('.nav .close').addClass('active'); 
-		$(".nav").addClass("opened"); 
-		$("body").addClass("modal-open");
+	// $(".hamburger").click(function(){
+	// 	$(this).removeClass('active');
+	// 	$('.nav .close').addClass('active'); 
+	// 	$(".nav").addClass("opened"); 
+	// 	$("body").addClass("modal-open");
 		
-	});
+	// });
 
-	$(".nav .close").click(function(){
-		$(this).removeClass('active');
-		$('.hamburger').addClass('active');
-		$(".nav").removeClass("opened");
-		$("body").removeClass("modal-open");
-	}); 
+	// $(".nav .close").click(function(){
+	// 	$(this).removeClass('active');
+	// 	$('.hamburger').addClass('active');
+	// 	$(".nav").removeClass("opened");
+	// 	$("body").removeClass("modal-open");
+	// }); 
 
 	// slick
 
