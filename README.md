@@ -14,3 +14,9 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 
 ## Deploy
 - Minify the css and the js
+
+
+## TODO
+- Header messed up on mobile
+- left/right overflow (image block 'all features' messed up)
+- header/footer on 404 page
