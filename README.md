@@ -16,7 +16,8 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 - Minify the css and the js
 
 ## TODO
-- Icons and testimonials.
+<!-- - Icons  -->
+- Testimonials.
 - Form success page.
 - Optimise site speed.
 <!-- - Image with offers in higher resolution  -->
