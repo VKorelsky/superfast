@@ -951,6 +951,9 @@ h5{
 
 .footer{
 	color: $white;
+	a {
+		color: $white;
+	}
 	.social{
 		background: $grey-light-1;
 		transition: all 0.2s;
