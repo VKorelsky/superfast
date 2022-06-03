@@ -17,7 +17,7 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 
 ## TODO
 <!-- - Icons  -->
-- Testimonials.
+<!-- - Testimonials. -->
 - Form success page.
 - Optimise site speed.
 <!-- - Image with offers in higher resolution  -->
@@ -25,4 +25,5 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 - Hero block Form can be submitted empty
 - EOP block can be submitted empty 
 - Update copy 
+- Update blocks
 - Privacy policy
