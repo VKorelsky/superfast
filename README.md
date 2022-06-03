@@ -22,8 +22,8 @@ Make sure [sass](https://www.sass-lang.com/install) is installed on your machine
 - Optimise site speed.
 <!-- - Image with offers in higher resolution  -->
 - Header button links to 404
-- Hero block Form can be submitted empty
-- EOP block can be submitted empty 
+<!-- - Hero block Form can be submitted empty -->
+<!-- - EOP block can be submitted empty  -->
 - Update copy 
-- Update blocks
+<!-- - Update blocks -->
 - Privacy policy
