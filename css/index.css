@@ -4,6 +4,8 @@ $green: #1DD05D; */
 /* Main page styles */
 .block-1 img {
   max-width: 100%;
+}
+.block-1 .partner-logo {
   width: 130px;
 }
 @media (max-width: 575.98px) {
