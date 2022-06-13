@@ -1,6 +1,24 @@
 /* Variables */
 
-$font_first: 'Open Sans', sans-serif;
+@font-face {
+    font-family: 'euclid_squareregular';
+    src: url('../fonts/euclid-webfont.woff2') format('woff2'),
+        url('../fonts/euclid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'promenaderegular';
+    src: url('../fonts/promenade-webfont.woff2') format('woff2'),
+        url('../fonts/promenade-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font_hero: 'promenaderegular', sans-serif;
+$font_first: 'euclid_squareregular', sans-serif;
 
 $font_size: 16px;
 

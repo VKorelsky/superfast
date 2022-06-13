@@ -3,12 +3,13 @@
 /* Main page styles */
 
 .block-1{
+	.font-hero{
+		font-family: $font_hero;
+	}
 	img{
 		max-width: 100%;	
 	}
-	.partner-logo{
-		width: 130px;
-	}
+
 	@media(max-width: 575.98px){
 		form{
 			button{
