@@ -7403,6 +7403,9 @@ h5 {
 .footer {
   color: #ffffff;
 }
+.footer a {
+  color: #ffffff;
+}
 .footer .social {
   background: rgba(255, 255, 255, 0.1);
   transition: all 0.2s;

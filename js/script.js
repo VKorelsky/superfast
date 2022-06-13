@@ -37,62 +37,12 @@ $(document).ready(function(){
 			});
 		}
 	}); 
+	
+	// Navigation
+	
 
-	// Отправка заявки
-		
-	$(".js-ajax-form").submit(function(event){
-		event.preventDefault();
-	 
-		var form = $(this),
-			term = form.serialize(),
-			url = form.attr("action");
-		
-		var valid = true;
-		var validate = form.find("#email").val();
-		if(validate==""){
-			form.addClass("error");
-			form.find(".ErrorMessage").text("Email field is empty!");
-		}else if(validate.indexOf("@")==-1 || validate.indexOf(".")==-1){
-			form.addClass("error");
-			form.find(".ErrorMessage").text("Email is not correct!");
-		}else{
-			form.removeClass("error");
-			
-			var posting = $.post( url, term );
-		 
-			posting.done(function(data) {
-				if(data.toLowerCase().indexOf("error")!==-1){
-					alert("Error");	
-				}else{
-					alert(data);
-				}
-			}).fail(function(data){
-				alert("Error");	
-			});
-			
-		}
-	 
-	});
-
-	// // Navigation
-
-	// $(".hamburger").click(function(){
-	// 	$(this).removeClass('active');
-	// 	$('.nav .close').addClass('active'); 
-	// 	$(".nav").addClass("opened"); 
-	// 	$("body").addClass("modal-open");
-		
-	// });
-
-	// $(".nav .close").click(function(){
-	// 	$(this).removeClass('active');
-	// 	$('.hamburger').addClass('active');
-	// 	$(".nav").removeClass("opened");
-	// 	$("body").removeClass("modal-open");
-	// }); 
 
 	// slick
-
 	if($(".block-5 .slider-1").length>0){
 		$(".block-5 .slider-1").each(function(index){
 			$(this).slick({  
@@ -125,35 +75,13 @@ $(document).ready(function(){
 		});
 	}	
 
-	if($(".users-block .slider-3").length>0){
-		$(".users-block .slider-3").each(function(index){
-			$(this).slick({  
-				dots: true,
-				arrows: false,
-				slidesToShow: 1,
-				infinite: false,
-				touchThreshold: 20,					
-			});
-			
-			$(this).parent().find(".slick-prev").click(function(){
-				$(this).closest(".users-block").find(".slider-3").slick('slickPrev');
-				$(this).closest(".users-block").find(".slider-2").slick('slickPrev');
-			});
-			
-			$(this).parent().find(".slick-next").click(function(){
-				$(this).closest(".users-block").find(".slider-3").slick('slickNext'); 		
-				$(this).closest(".users-block").find(".slider-2").slick('slickNext'); 		
-			});			
-		});
-	}
-
 	if($(".users-block .slider-2").length>0){
 		$(".users-block .slider-2").each(function(index){
 			$(this).slick({  
 				dots: false,
 				arrows: false,
 				slidesToShow: 5,	
-				infinite: false,
+				infinite: true,
 				focusOnSelect: true,
 				responsive: [
 					{
@@ -183,107 +111,5 @@ $(document).ready(function(){
 				]					
 			});
 		}); 
-	}	
-	 
-
-	$(".users-block .slider-2 .slick-slide").click(function(){
-		var slideNum = $(this).index(); 
-		$('.users-block .slider-3').slick('slickGoTo',slideNum);
-	});
-	
-	if($(".block-14 .slider-4").length>0){
-		$(".block-14 .slider-4").each(function(index){
-			$(this).slick({  
-				dots: false,
-				arrows: false,
-				slidesToShow: 4,	
-				infinite: false,
-				focusOnSelect: true,					
-			});
-		}); 
-	}	
-	
-	if($(".block-14 .slider-5").length>0){
-		$(".block-14 .slider-5").each(function(index){
-			$(this).slick({  
-				dots: false,
-				arrows: false,
-				slidesToShow: 1,
-				infinite: false,
-				touchThreshold: 20,
-				swipe: false,
-				adaptiveHeight: true,	 			
-			});
-		});
-	}		
-
-	$(".block-14 .slider-4 .slick-slide").click(function(){
-		$('.block-14 .slider-4 .slick-slide').removeClass('slick-current');
-		$(this).addClass('slick-current');
-		var slideNum = $(this).index(); 
-		$('.block-14 .slider-5').slick('slickGoTo',slideNum);
-	});	
-
-	//Changing Pricing variants Yearly/Monthly
-
-	$(".block-21 input[type=checkbox]").change(function(){
-		if($(this).prop("checked")){
-			$(this).closest(".block-21").removeClass("yearly");
-			$(this).closest(".block-21").addClass("monthly");
-		} else {
-			$(this).closest(".block-21").addClass("yearly");
-			$(this).closest(".block-21").removeClass("monthly");
-		}	
-	});		
-	
-	//Tooltips
-	var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-		return new bootstrap.Tooltip(tooltipTriggerEl)
-	}) 
-	
-	//Pricing opening row
-	$(".block-22 .OpenRow .OpenRowHeader").click(function(event){
-		if($(this).closest(".block-22 .OpenRow").children('.OpenRowInner').length > 0 && $(this).closest(".block-22 .OpenRow").hasClass("opened")){
-			$(this).closest(".block-22 .OpenRow").removeClass("opened");   
-		}else{
-			$(this).closest(".block-22 .OpenRow").addClass("opened");
-		}
-	});    
-
-	//FAQ opening Answer
-	$(".block-23 .QuestionBlock .QuestionHeader").click(function(event){
-		if($(this).closest(".block-23 .QuestionBlock").hasClass("opened")){
-			$(this).closest(".block-23 .QuestionBlock").removeClass("opened");   
-		}else{
-			$(this).closest(".block-23 .QuestionBlock").addClass("opened");
-		}
-	}); 	
-	
-	// Filter Blog
-	$(".BlogMenu [data-filter]").click(function(event){
-		$(".BlogMenu .BlogMenuItem").removeClass("active");
-		$(this).addClass("active");
-		var filter = $(this).attr("data-filter");
-		console.log(filter);
-		$(".BlockBlog").addClass("d-none");
-		if(filter==""){
-			filter = "[data-filter]"; 
-		}else{
-			filter = "[data-filter='"+filter+"']";
-		}
-		$(".BlockBlog"+filter).removeClass("d-none").each(function(i,v){
-			$(this).attr("data-item-num",i+1);
-		});
-	}); 	
-
-	// Legal Information left-menu open/close
-	$(".menu-block").click(function(){
-		if ($(this).hasClass("active")){
-			$(this).removeClass("active");
-		} else{  
-			$(this).addClass('active');   
-		}
-	});		
-
+	}
 });
