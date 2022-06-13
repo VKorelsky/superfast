@@ -1,7 +1,22 @@
 /* Variables */
+@font-face {
+  font-family: "euclid_squareregular";
+  src: url("../fonts/euclid-webfont.woff2") format("woff2"), url("../fonts/euclid-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "promenaderegular";
+  src: url("../fonts/promenade-webfont.woff2") format("woff2"), url("../fonts/promenade-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* $purple: #C665EE;
 $green: #1DD05D; */
 /* Main page styles */
+.block-1 .font-hero {
+  font-family: "promenaderegular", sans-serif;
+}
 .block-1 img {
   max-width: 100%;
 }

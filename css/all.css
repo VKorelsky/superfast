@@ -1,4 +1,16 @@
 /* Variables */
+@font-face {
+  font-family: "euclid_squareregular";
+  src: url("../fonts/euclid-webfont.woff2") format("woff2"), url("../fonts/euclid-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "promenaderegular";
+  src: url("../fonts/promenade-webfont.woff2") format("woff2"), url("../fonts/promenade-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 /* $purple: #C665EE;
 $green: #1DD05D; */
 /*!
@@ -6448,7 +6460,7 @@ $green: #1DD05D; */
 
 html {
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "euclid_squareregular", sans-serif;
 }
 
 body {
@@ -6547,7 +6559,7 @@ img.rounded {
 }
 
 form {
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "euclid_squareregular", sans-serif !important;
   /* 	input[type="password"]{
   		border-radius: 8px;
   		height: 50px;
@@ -6666,7 +6678,7 @@ form textarea {
   -moz-appearance: none;
   appearance: none;
   outline: -webkit-focus-ring-color auto 0px;
-  font-family: "Open Sans", sans-serif !important;
+  font-family: "euclid_squareregular", sans-serif !important;
   height: 140px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 10px;
