@@ -5,9 +5,6 @@ $green: #1DD05D; */
 .block-1 img {
   max-width: 100%;
 }
-.block-1 .partner-logo {
-  width: 130px;
-}
 @media (max-width: 575.98px) {
   .block-1 form button {
     width: 100%;
