@@ -49,7 +49,7 @@ $(document).ready(function(){
 				dots: false,
 				arrows: false,
 				slidesToShow: 4,
-				infinite: false,
+				infinite: true,
 				touchThreshold: 20,
 				responsive: [
 					{
@@ -78,7 +78,7 @@ $(document).ready(function(){
 	if($(".users-block .slider-2").length>0){
 		$(".users-block .slider-2").each(function(index){
 			$(this).slick({  
-				dots: false,
+				dots: true,
 				arrows: false,
 				slidesToShow: 5,	
 				infinite: true,
